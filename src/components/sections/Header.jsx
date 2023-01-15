@@ -23,8 +23,13 @@ const Header = () => {
             className="header"
             ref={header}
         >
+
             <nav className="nav">
                 <div className="container f-elements f-elements--header">
+                    
+                    <img src="https://www.svgrepo.com/show/86537/airplane.svg" alt="React" width="64" height="64"
+                    className="avion__decorator" />
+                    
                     <Link to="/">
                         <img src={logoEAKON} alt="Logo de EAKON" className="nav__logo" width="32" height="32" />
                     </Link>
