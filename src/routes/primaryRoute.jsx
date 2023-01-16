@@ -12,13 +12,7 @@ export const primaryRoute = createBrowserRouter([
             },
             {
                 path: 'productos',
-                element: <section>
-                <div>
-                    <h1 className="container f-elements">Titulo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem porro fugit, nemo molestias vitae est doloremque
-                    iure tempore natus qui, facere fugiat placeat quae maxime nostrum ipsum corrupti voluptatum!</p>
-                </div>
-            </section>
+                element: <h1>Productos</h1>
             },
             {
                 path: 'servicios',
