@@ -11,7 +11,7 @@ export const primaryRoute = createBrowserRouter([
                 element: <h1>Home</h1>
             },
             {
-                path: 'productos',
+                path: 'inicio',
                 element: <section>
                 <div>
                     <h1 className="container f-elements">Titulo</h1>
@@ -29,8 +29,8 @@ export const primaryRoute = createBrowserRouter([
                 element: <h1>Nosotros</h1>
             },
             {
-                path: 'contacto',
-                element: <h1>Contacto</h1>
+                path: 'contactos',
+                element: <h1>Contacto asdswarfpiwefurewiotghjerouighfdjkgfdgfdgdfgfdgfd</h1>
             }
         ]
     }

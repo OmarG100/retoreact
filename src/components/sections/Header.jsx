@@ -45,9 +45,21 @@ const Header = () => {
                                     <li className="nav-item">
                                         <a class="nav-link list__link" href="#aboutus">Acerca de Nosotros</a>
                                     </li>
+
+
                                     <li className="nav-item">
-                                        <a className="nav-link list__link" href="#contact">Contactos</a>
+                                    <NavLink
+                                    to="/Contactos"
+                                    className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
+                                    onClick={hideMenu}
+                                    >
+                                    Contactos
+                                    </NavLink>
+
                                     </li>
+
+
+
                                     <li className="nav-item">
                                         <a className="nav-link list__link" href="#ofertas">Ofertas</a>
                                     </li>
