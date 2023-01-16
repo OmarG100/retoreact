@@ -49,7 +49,7 @@ const Header = () => {
 
                                     <li className="nav-item">
                                     <NavLink
-                                    to="/Contactos"
+                                    to="/contactos"
                                     className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                                     onClick={hideMenu}
                                     >
