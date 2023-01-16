@@ -13,10 +13,11 @@ export const primaryRoute = createBrowserRouter([
             {
                 path: 'inicio',
                 element: <section>
-                    <div className="m-5 text-dark">
-                        <h1>Inicio</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a porro excepturi, 
-                            aliquam minus ducimus totam commodi blanditiis voluptas sequi, sunt maiores doloribus! Nisi illum, adipisci laudantium hic eos corrupti?</p>
+                    <div className="m-5 py-5 text-dark text-center ">
+                        <h1 className="fs-3 text">Somos la Agencia de Viajes "Lorem Ipsum Travellers"</h1>
+                        <p>Nuestra pasión por el turismo nos convierte en una empresa sobresaliente que 
+                        brinda los mejores programas de viajes tanto en el Perú como en el mundo.</p>
+                        <img src="https://peruconstruye.net/wp-content/uploads/2019/01/Senace-aprobo-nueve-EIA-d-por-mas-de-US-3000-millones-en-el-2018.jpg" alt="" width={400} height={400}/>
                     </div>
                 </section>
             },
@@ -30,7 +31,11 @@ export const primaryRoute = createBrowserRouter([
             },
             {
                 path: 'contactos',
-                element: <h1>Contacto asdswarfpiwefurewiotghjerouighfdjkgfdgfdgdfgfdgfd</h1>
+                element: <section>
+                    <div>
+                        <h1></h1>
+                    </div>
+                </section>
             }
         ]
     }
