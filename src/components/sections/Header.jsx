@@ -1,7 +1,7 @@
 import { useRef } from 'react';
-import { BsList, BsXCircle } from "react-icons/bs";
+// import { BsList, BsXCircle } from "react-icons/bs";
 import { Link, NavLink } from 'react-router-dom';
-import logoEAKON from '../../assets/img/logo-eakon.webp';
+// import logoEAKON from '../../assets/img/logo-eakon.webp';
 
 const Header = () => {
 
