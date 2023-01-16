@@ -24,49 +24,64 @@ const Header = () => {
             ref={header}
         >
 
-<nav className="navbar navbar-expand-lg navbar-dark header">
-                        <div className="container">
-                            <a className="navbar-brand m-0 p-0" href="#">
-                                <img src="https://png.pngtree.com/png-vector/20191010/ourlarge/pngtree-travel-logo-holidays-tourism-business-trip-company-logo-design-vector-illustration-png-image_1808446.jpg"
-                                    alt="Logo Turismo" class="nav__logo" />
-                            </a>
-                            <img src="https://www.svgrepo.com/show/86537/airplane.svg" alt="React" width="64" height="64"
-                                className="avion__decorator" />
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li className="nav-item">
-                                        <a className="nav-link list__link" href="#hero">Inicio</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a class="nav-link list__link" href="#aboutus">Acerca de Nosotros</a>
-                                    </li>
+        <nav className="navbar navbar-expand-lg navbar-dark header">
+            <div className="container">
+                <a className="navbar-brand m-0 p-0" href="#">
+                    <img src="https://png.pngtree.com/png-vector/20191010/ourlarge/pngtree-travel-logo-holidays-tourism-business-trip-company-logo-design-vector-illustration-png-image_1808446.jpg"
+                    alt="Logo Turismo" class="nav__logo" />
+                </a>
+                <img src="https://www.svgrepo.com/show/86537/airplane.svg" alt="React" width="64" height="64"
+                className="avion__decorator" />
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    ria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/inicio"
+                                    className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
+                                    onClick={hideMenu}
+                                >
+                                    <a className="nav-link list__link">Inicio</a>
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/acerca de Nosotros"
+                                    className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
+                                    onClick={hideMenu}
+                                >
+                                    <a className="nav-link list__link">Acerca de Nosotros</a>
+                                </NavLink>                               
+                                
+                            </li>
 
-
-                                    <li className="nav-item">
-                                    <NavLink
+                            <li className="nav-item">
+                            <NavLink
                                     to="/contactos"
                                     className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                                     onClick={hideMenu}
-                                    >
-                                    Contactos
-                                    </NavLink>
+                                >
+                                    <a className="nav-link list__link">Contactos</a>
+                                </NavLink>  
+                            </li>
 
-                                    </li>
-
-
-
-                                    <li className="nav-item">
-                                        <a className="nav-link list__link" href="#ofertas">Ofertas</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/ofertas"
+                                    className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
+                                    onClick={hideMenu}
+                                >
+                                    <a className="nav-link list__link">Ofertas</a>
+                                </NavLink>  
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
     );
 };

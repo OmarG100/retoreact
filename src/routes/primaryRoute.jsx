@@ -20,17 +20,50 @@ export const primaryRoute = createBrowserRouter([
                     </div>
                 </section>
             },
+
             {
-                path: 'servicios',
-                element: <h1>Servicios</h1>
+                path: 'acerca de Nosotros',
+                element: <section>
+                <div className="m-5 text-dark">
+                element: <h1>Acerca de Nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a porro excepturi, 
+                            aliquam minus ducimus totam commodi blanditiis voluptas sequi, sunt maiores doloribus! Nisi illum, adipisci laudantium hic eos corrupti?</p>
+                    </div>
+                </section>            
             },
+
             {
                 path: 'nosotros',
-                element: <h1>Nosotros</h1>
+                element: <section>
+                <div className="m-5 text-dark">
+                element: <h1>Acerca de Nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a porro excepturi, 
+                            aliquam minus ducimus totam commodi blanditiis voluptas sequi, sunt maiores doloribus! Nisi illum, adipisci laudantium hic eos corrupti?</p>
+                    </div>
+                </section>
+                
             },
+
             {
                 path: 'contactos',
-                element: <h1>Contacto asdswarfpiwefurewiotghjerouighfdjkgfdgfdgdfgfdgfd</h1>
+                element: <section>
+                <div className="m-5 text-dark">
+                element: <h1>Acerca de Nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a porro excepturi, 
+                            aliquam minus ducimus totam commodi blanditiis voluptas sequi, sunt maiores doloribus! Nisi illum, adipisci laudantium hic eos corrupti?</p>
+                    </div>
+                </section>
+            },
+
+            {
+                path: 'Ofertas',
+                element: <section>
+                <div className="m-5 text-dark">
+                element: <h1>Acerca de Nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a porro excepturi, 
+                            aliquam minus ducimus totam commodi blanditiis voluptas sequi, sunt maiores doloribus! Nisi illum, adipisci laudantium hic eos corrupti?</p>
+                    </div>
+                </section>
             }
         ]
     }
